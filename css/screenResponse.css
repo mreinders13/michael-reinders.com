@@ -1,0 +1,69 @@
+@media screen and (max-width: 800px) {
+    #siteTitle  p {
+        text-align: center;
+        font-size: 3.5vw;
+    }
+    
+    #siteTitle  {
+        margin-left: 15%;
+        margin-right: 15%;
+        padding-left: 0;
+        width: 70%;
+        line-height: 5%;
+    }
+    
+    #nav-bar {
+        width: 100%;
+        float: none;
+    }
+
+    a.nav-class {
+        line-height: 50px;
+    }
+    
+    /*   Set Correct Banner Image   */
+    
+    #home-banner {
+        display: none;
+    }
+
+    #home-banner-800 {
+        display: block;
+        width:100%;
+        margin: 0;
+    }
+    
+    #home-banner-480 {
+        display: none;
+    }
+        
+}
+
+@media screen and (max-width: 480px) {
+    #siteTitle  p {
+        text-align: center;
+        font-size: 16px;
+    }
+
+    #siteTitle {
+        padding-left: 0;
+        line-height: 5%;
+        
+    }
+    
+        /*   Set Correct Banner Image   */
+    
+    #home-banner {
+        display: none;
+    }
+
+    #home-banner-800 {
+       display: none; 
+    }
+    
+    #home-banner-480 {
+        display: block;
+        width:100%;
+        margin: 0;
+    }
+}
