@@ -36,7 +36,11 @@
     #home-banner-480 {
         display: none;
     }
-        
+
+    /*  Set correct page-main-content */
+    #page-main-content {
+        margin: 1% 15% 1% 15%;
+    }
 }
 
 @media screen and (max-width: 480px) {

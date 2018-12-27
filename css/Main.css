@@ -84,7 +84,7 @@ a.nav-class:hover {
 /*---------------------------------Main Content---------------------------*/
  
 #page-main-content {
-    margin: 1% 5% 1% 5%;
+    margin: 1% 20% 1% 20%;
     text-align: justify;
 }
 
@@ -97,6 +97,7 @@ a.nav-class:hover {
 
 #page-main-content p {
     line-height: 1.8;
+    color: #515151;
 }
 
 /*----------------------Footer Styling-------------------------------*/
