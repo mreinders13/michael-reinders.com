@@ -71,3 +71,26 @@
         margin: 0;
     }
 }
+
+/*-------------------------Contact Logo Response-----------------------------*/
+.clickable-icon {
+    display:inline-block;
+    margin: 10%;
+    text-align:center;
+}
+
+@media screen and (max-width: 1000px) {
+    .clickable-icon {
+        margin: 5%;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .clickable-icon {
+        margin: 2.5%;
+
+    }
+    img.clickable-icon {
+        max-width: 20%;
+    }
+}
