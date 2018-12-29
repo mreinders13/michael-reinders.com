@@ -17,17 +17,15 @@
 	        font-family: 'Muli', sans-serif;
 	        font-size: 16px;
 	        text-align: center;
-	        
 	    }
 	    
 	    #portfolioMenu a {
 	        text-decoration: none;
 	        color: #707070;
 	    }
-	    
-	    #portfolioMenu a:hover {
-	        color: black;
-	        font-size: 17px;
+
+	    a#menuSite {
+	    	color: black;
 	    }
 	    
 	</style>
@@ -51,25 +49,54 @@
 
 <div id="page-main-content">
 <h1 style="font-weight: 100;">Portfolio</h1>
-<p id="portfolioMenu"><a id="menuWeb" href='javascript:;' onclick='selectWeb()'>Websites</a> | <a href="/portfolio">Web Applications</a> | <a href="/portfolio">Desktop Applications</a> | <a href="/portfolio">Mobile Applications</a></p>
-</div>
+<p id="portfolioMenu"><a id="menuSite" href='javascript:;' onclick='resetMenu(),selectSites()'>Websites</a> | <a id="menuWeb" href='javascript:;' onclick='resetMenu(),selectWeb()'>Web Applications</a> | <a id="menuDesktop" href='javascript:;' onclick='resetMenu(),selectDesktop()'>Desktop Applications</a> | <a id="menuMobile" href='javascript:;' onclick='resetMenu(),selectMobile()'>Mobile Applications</a></p>
 
-<div style="text-align: center; width: 85%; margin-left: 7.5%; margin-right: 7.5%;" id="websites">
-    <h3 style="text-align: center; width: 45%; margin-right: 2.5%; display: inline-block;">Michael-Reinders.com (Current Site)</h3><h3 style="text-align: center;width: 45%; margin-left: 2.5%; display: inline-block;"><a href="https://www.quantummark.com/" target="_blank">QuantumMark.com</a></h3>
+<!--------------------------Content to show if clicked-------------------->
+<div id="websites" style="display: block;"><p>Michael-Reinders.com: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 </div>
-<div id="webApps"><p>Web Applications</p></div>
-<div id="desktopApps"><p>Desktop Applications</p></div>
-<div id="mobileApps"><p>Mobile Applications</p></div>
+<div id="webApps"><p>WEB APPS: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+<div id="desktopApps"><p>DESKTOP APPS: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+<div id="mobileApps"><p>MOBILE APPS: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
 <script type='text/javascript'>
 
-function selectWeb()
-{
+function resetMenu() {
+	document.getElementById('websites').style.display = "none";
+	document.getElementById('menuSite').style.color = "#707070"
+	document.getElementById('menuSite').style.fontSize = "16px"
+	document.getElementById('webApps').style.display = "none";
+	document.getElementById('menuWeb').style.color = "#707070";
+	document.getElementById('menuWeb').style.fontSize = "16px";
+	document.getElementById('desktopApps').style.display = "none";
+	document.getElementById('menuDesktop').style.color = "#707070";
+	document.getElementById('menuDesktop').style.fontSize = "16px";
+	document.getElementById('mobileApps').style.display = "none";
+	document.getElementById('menuMobile').style.color = "#707070";
+	document.getElementById('menuMobile').style.fontSize = "16px";
+}
+
+function selectSites() {
     document.getElementById('websites').style.display = "block";
-    document.getElementById('menuWeb').style.color = "black";
-    document.getElementById('menuWeb').style.fontSize = "larger";
+    document.getElementById('menuSite').style.color = "black";
+}
+
+function selectWeb() {
+	document.getElementById('webApps').style.display = "block";
+	document.getElementById('menuWeb').style.color = "black";
+}
+
+function selectDesktop() {
+	document.getElementById('desktopApps').style.display = "block";
+	document.getElementById('menuDesktop').style.color = "black";
+}
+
+function selectMobile() {
+	document.getElementById('mobileApps').style.display = "block";
+	document.getElementById('menuMobile').style.color = "black";
 }
 
 </script>
+</div>
+
 <footer>
 <p id="footer"><a href="mailto:michael.h.reinders@gmail.com">Email</a> | <a href="https://www.linkedin.com/in/michaelhreinders/" target="_blank">LinkedIn</a> | <a href="https://github.com/mreinders13" target="_blank">GitHub</a> | <a href="https://www.facebook.com/michael.reinders.31?ref=bookmarks" target="_blank">Facebook</a> | <a href="https://twitter.com/mreinders13" target="_blank">Twitter</a><br />
 &copy; Copyright 2018 Michael Reinders</p>
