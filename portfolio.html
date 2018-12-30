@@ -27,6 +27,13 @@
 	    a#menuSite {
 	    	color: black;
 	    }
+
+	    .previewHeader {
+	    	text-align: center;
+	    	font-size: 18px;
+	    	color: black;
+	    }
+
 	    
 	</style>
 </head>
@@ -49,14 +56,36 @@
 
 <div id="page-main-content">
 <h1 style="font-weight: 100;">Portfolio</h1>
-<p id="portfolioMenu"><a id="menuSite" href='javascript:;' onclick='resetMenu(),selectSites()'>Websites</a> | <a id="menuWeb" href='javascript:;' onclick='resetMenu(),selectWeb()'>Web Applications</a> | <a id="menuDesktop" href='javascript:;' onclick='resetMenu(),selectDesktop()'>Desktop Applications</a> | <a id="menuMobile" href='javascript:;' onclick='resetMenu(),selectMobile()'>Mobile Applications</a></p>
+<p id="portfolioMenu"><a id="menuSite" href='javascript:;' onclick='resetMenu(),selectSites()'>Websites</a> | <a id="menuWeb" href='javascript:;' onclick='resetMenu(),selectWeb()'>Web-Apps</a> | <a id="menuDesktop" href='javascript:;' onclick='resetMenu(),selectDesktop()'>Desktop</a> | <a id="menuMobile" href='javascript:;' onclick='resetMenu(),selectMobile()'>Mobile</a></p>
 
 <!--------------------------Content to show if clicked-------------------->
-<div id="websites" style="display: block;"><p>Michael-Reinders.com: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+<div id="websites" style="display: block;">
+	<p class="previewHeader"><a href="/" target="_blank">Michael-Reinders.com</a></p>
+	<a href="/" target="_blank"><img class="preview-img" src="img/michael-reinders-preview.png" alt="michael-reinders-preview" /></a>	
+	<p><a href="/" target="_blank">Michael-Reinders.com</a> is a static website created using simple HTML, CSS and Javascript. The goal of this website was to design a beautiful, professional portfolio website while using a minimal amount of code. The result is a stunning, simplistic and informative website that is both responsive and optimized for mobile devices.</p>
+	<hr />
+	<p class="previewHeader"><a href="https://www.quantummark.com" target="_blank">QuantumMark.com</a></p>
+	<a href="https://www.quantummark.com" target="_blank"><img class="preview-img" src="img/quantummark-preview.png" alt="quantummark-preview" /></a>	
+	<p><a href="https://www.quantummark.com" target="_blank">Quantummark.com</a> is a Corportate Website that utilizes Wordpress as its Content Management System. The website uses the Total Wordpress theme, but many of its features include custom HTML, CSS and Javascript to achieve some of its more ambitious design goals, including all About and Service webpages and a custom coded Contact form.</p>
 </div>
-<div id="webApps"><p>WEB APPS: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
-<div id="desktopApps"><p>DESKTOP APPS: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
-<div id="mobileApps"><p>MOBILE APPS: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+<div id="webApps">
+	<p class="previewHeader">.NetCore MVC Application</p>
+	<a href="https://github.com/mreinders13/First-MVC" target="_blank"><img class="preview-img" style="border-style: solid; border-width: thin;" src="img/MVC-Preview.png" alt=".NetCore MVC Application" /></a>
+	<p>This is the first application that introduced me to the MVC framework. This application utilizes a "Students" controller wired with a Database that uses a Model "Student" to display student information in various Razor Pages (or Views). This application was created with .NetCore 2.0 and Visual Studio.</p>
+	<hr />
+</div>
+<div id="desktopApps">
+	<p class="previewHeader">UNR Advising Software</p>
+	<a href="https://github.com/mreinders13/UNR-Major-Advisor-Program" target="_blank"><img class="preview-img" style="border-style: solid; border-width: thin;" src="img/UNR-Application-Preview.png" alt="UNR Advising Application" /></a>
+	<p>This desktop application was created for my UNR Inforamtion Systems capstone course. The clients/users are UNR Advisors and the application is designed to import current excel files used in the Major application process. The software displays each student and their qualifications and provides a simple User Interface for advisors to Accept, Deny or Bridge each student's applicaiton. Written in Visual Basic using Visual Studio.</p>
+	<hr />
+</div>
+	
+<div id="mobileApps">
+	<p class="previewHeader">Hotel Reservation App</p>
+	<a href="https://github.com/mreinders13/Hotel-Reservation" target="_blank"><img class="preview-img" style="border-style: solid; border-width: thin;" src="img/Hotel-Reservation-Preview.png" alt="Hotel Reservation Application" /></a>
+	<p>This Android application is designed to mimic a simple Hotel Reservation system that allows users to select from four different hotels, select their desired room type, enter user information, select a Check-in and Check-out Date, request any special needs/requests and review their reservation. This Android application was creating using C# and Xamarin Forms in Visual Studio. </p>
+	<hr /></div>
 <script type='text/javascript'>
 
 function resetMenu() {

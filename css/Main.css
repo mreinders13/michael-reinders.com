@@ -81,6 +81,13 @@ a.nav-class:hover {
     display: none;
 }
 
+/*---------------------------------Preview Images-------------------------*/
+.preview-img {
+    display: block;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
 /*---------------------------------Main Content---------------------------*/
  
 #page-main-content {
@@ -103,6 +110,15 @@ a.nav-class:hover {
     color: #515151;
 }
 
+#page-main-content a {
+    text-decoration: none;
+    color: #515151;        
+}
+
+#page-main-content a:hover {
+    color: black;
+    font-size: 17px;
+}
 
 /*----------------------Footer Styling-------------------------------*/
 #footer a {
